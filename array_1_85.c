@@ -16,7 +16,6 @@ int main()
 
     float det = a[0][0]*a[1][1]-a[0][1]*a[1][0];
     int in_det = det;
-    //printf("%d\n", in);
 
     float tmp = a[0][0];
     a[0][0] = a[1][1];
@@ -30,7 +29,6 @@ int main()
         for(int j=0; j<2; j++)
         {
             int in = a[i][j];
-            //printf("in:%d  f:%f\n", in, a[i][j]);
             if(in%in_det == 0)
                 printf("%.0f", a[i][j]/det);
             else
