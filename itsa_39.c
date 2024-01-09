@@ -17,7 +17,6 @@ int main()
             if(a[j]<60)
                 count_fail++;
         }
-        //printf("fail:%d\n", count_fail);
         if(count_fail == 0)
             printf("P\n");
         else if(a[0] + a[1] + a[2] >= 220 && count_fail == 1)
